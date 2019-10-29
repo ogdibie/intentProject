@@ -70,10 +70,10 @@ public class TerminalProgram {
             ProductPrice productPrices = productsPrices.get(curr);
             //search through from best value to determine the best deal
             for(int i=productPrices.size-1; i>= 0; i--){
-                int currlargestAmount = productPrices.amounts.get(i);
-                if(amount >= currlargestAmount){
-                    totalPrice = totalPrice + (amount/currlargestAmount) * productPrices.prices.get(i);
-                    amount = amount % currlargestAmount;
+                int currLargestAmount = productPrices.amounts.get(i);
+                if(amount >= currLargestAmount){
+                    totalPrice = totalPrice + (amount/currLargestAmount) * productPrices.prices.get(i);
+                    amount = amount % currLargestAmount;
                 }
             }
         }
